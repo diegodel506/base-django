@@ -1,8 +1,4 @@
-from io import BytesIO
-
-import requests
 import win32print
-from PIL import Image, ImageOps
 
 import _connectors.ConectorPython as ConectorPython
 
