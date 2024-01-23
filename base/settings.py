@@ -98,15 +98,10 @@ WSGI_APPLICATION = "base.wsgi.application"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    """ "default": {
+    "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-    } """
-    "default": dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default="postgres://base_django_dtb_user:wYQ0kLPpuxgjmhixiO9rRaUONbJWPw0f@dpg-cmnuocun7f5s73d1asvg-a/base_django_dtb",
-        conn_max_age=600,
-    )
+    }
 }
 
 
