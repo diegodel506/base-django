@@ -7,6 +7,7 @@ certifi==2023.11.17
 charset-normalizer==3.3.2
 click==8.1.7
 colorama==0.4.6
+distlib==0.3.8
 dj-database-url==2.1.0
 Django==5.0
 django-cors-headers==4.3.1
@@ -14,6 +15,7 @@ django-filter==23.5
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
 drf-yasg==1.21.7
+filelock==3.13.1
 gunicorn==21.2.0
 idna==3.6
 importlib-resources==6.1.1
@@ -21,6 +23,7 @@ inflection==0.5.1
 packaging==23.2
 pillow==10.2.0
 pipdeptree==2.13.2
+platformdirs==4.1.0
 psycopg2-binary==2.9.9
 py4j==0.10.9.7
 PyJWT==2.8.0
@@ -38,6 +41,7 @@ typing_extensions==4.9.0
 tzdata==2023.3
 uritemplate==4.1.1
 urllib3==2.1.0
+virtualenv==20.25.0
 wheel==0.42.0
 whitenoise==6.6.0
 WMI==1.5.1
