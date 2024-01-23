@@ -62,6 +62,7 @@ def viewControl(
     area_mesa,
     es_recibo,
 ):
+    print("hola")
     """printer_name = "P-58"
     desactivar_kanji = b"\x1C\x2E"
     printer_exists = False
