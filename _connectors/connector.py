@@ -1,11 +1,11 @@
-import win32print
+# import win32print
 
 import _connectors.ConectorPython as ConectorPython
 
 encoder = "cp437"
 
 
-def initialize_printer(hPrinter):
+""" def initialize_printer(hPrinter):
     win32print.WritePrinter(hPrinter, b"\x1B@")
     win32print.WritePrinter(hPrinter, b"\x1C\x2E")
 
@@ -48,6 +48,7 @@ def print_barcode(hPrinter, ancho, alto, valor):
     comando_imprimir = b"\x1Dk\x06" + valor.encode(encoder) + b"\x00"
     comandos = comando_width + comando_height + comando_imprimir
     win32print.WritePrinter(hPrinter, comandos)
+ """
 
 
 def viewControl(
@@ -61,7 +62,7 @@ def viewControl(
     area_mesa,
     es_recibo,
 ):
-    printer_name = "P-58"
+    """printer_name = "P-58"
     desactivar_kanji = b"\x1C\x2E"
     printer_exists = False
     printers = win32print.EnumPrinters(win32print.PRINTER_ENUM_LOCAL, None, 1)
@@ -169,4 +170,4 @@ def viewControl(
             win32print.EndPagePrinter(hPrinter)
             win32print.EndDocPrinter(hPrinter)
         finally:
-            win32print.ClosePrinter(hPrinter)
+            win32print.ClosePrinter(hPrinter)"""
