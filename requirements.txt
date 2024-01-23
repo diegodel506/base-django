@@ -9,7 +9,7 @@ click==8.1.7
 colorama==0.4.6
 distlib==0.3.8
 dj-database-url==2.1.0
-Django==5.0
+Django==5.0.1
 django-cors-headers==4.3.1
 django-filter==23.5
 djangorestframework==3.14.0
@@ -29,6 +29,7 @@ py4j==0.10.9.7
 PyJWT==2.8.0
 pyproject_hooks==1.0.0
 pytz==2023.3.post1
+pywin32==306
 PyYAML==6.0.1
 qrcode==7.4.2
 requests==2.31.0
@@ -43,3 +44,4 @@ urllib3==2.1.0
 virtualenv==20.25.0
 wheel==0.42.0
 whitenoise==6.6.0
+WMI==1.5.1
