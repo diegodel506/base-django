@@ -32,7 +32,7 @@ SECRET_KEY = "django-insecure-wpn^qd@n787zo&&#t!!)+r4rh-q_e%n=xddx#=pzs_4+-rib2u
 # DEBUG = True
 DEBUG = True
 
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "0.0.0.0", "192.168.56.1"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
 
 # Application definition
