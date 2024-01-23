@@ -19,6 +19,7 @@ idna==3.6
 importlib-resources==6.1.1
 inflection==0.5.1
 packaging==23.2
+pillow==10.2.0
 pipdeptree==2.13.2
 psycopg2-binary==2.9.9
 py4j==0.10.9.7
