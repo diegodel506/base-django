@@ -2,9 +2,11 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 from .managers import CustomUserManager
 
-class User (AbstractUser):
+
+class User(AbstractUser):
     email = models.EmailField(unique=True)
-    USERNAME_FIELD = 'email'
+    is_kitchen = models.BooleanField(default=False)
+    USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
     objects = CustomUserManager()
