@@ -5,10 +5,11 @@ from tables.api.serializers import TableSerializer
 
 from tables.models import Table
 
+
 class TableApiViewSet(ModelViewSet):
     permission_classes = [IsAuthenticatedOrReadOnly]
     serializer_class = TableSerializer
-    queryset = Table.objects.all().order_by('number')
-        #Filtros...
+    queryset = Table.objects.all().order_by("number")
+    # Filtros...
     filter_backends = [DjangoFilterBackend]
-    filterset_fields = ['area', 'id']
+    filterset_fields = ["area", "id", "number"]
