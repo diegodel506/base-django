@@ -19,7 +19,7 @@ def PrintRequestApi(request):
 
         print(total_payment)
 
-        """ viewControl(
+        viewControl(
             total_payment,
             nit_cliente,
             nombre_cliente,
@@ -29,7 +29,7 @@ def PrintRequestApi(request):
             no_mesa,
             area_mesa,
             es_recibo,
-        ) """
+        )
 
         return Response({"mensaje": "Operación exitosa"})
     except Exception as e:
