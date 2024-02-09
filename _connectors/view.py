@@ -17,8 +17,6 @@ def PrintRequestApi(request):
         area_mesa = request.data.get("area_mesa", "")
         es_recibo = request.data.get("es_recibo", "")
 
-        print(total_payment)
-
         viewControl(
             total_payment,
             nit_cliente,
