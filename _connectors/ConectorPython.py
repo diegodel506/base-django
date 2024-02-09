@@ -1,6 +1,6 @@
 import requests
 
-URL_PLUGIN_POR_DEFECTO = "http://localhost:8000"
+URL_PLUGIN_POR_DEFECTO = "https://base-django.onrender.com"
 TAMAÑO_IMAGEN_NORMAL = 0
 TAMAÑO_IMAGEN_DOBLE_ANCHO = 1
 TAMAÑO_IMAGEN_DOBLE_ALTO = 2
