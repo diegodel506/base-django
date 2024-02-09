@@ -5,7 +5,7 @@ from _connectors.connector import viewControl
 
 
 @api_view(["POST"])
-def hola_mundo_api(request):
+def PrintRequestApi(request):
     try:
         total_payment = request.data.get("total_payment", "")
         nit_cliente = request.data.get("nit_cliente", "")
@@ -28,6 +28,7 @@ def hola_mundo_api(request):
             area_mesa,
             es_recibo,
         )
+
         return Response({"mensaje": "Operación exitosa"})
     except Exception as e:
         print(f"Error en la vista hola_mundo_api: {e}")
