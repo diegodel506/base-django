@@ -10,3 +10,6 @@ def viewControl(
     es_recibo,
 ):
     print(total_payment)
+    print(nit_cliente)
+    print(nombre_cliente)
+    print(fecha_orden)
