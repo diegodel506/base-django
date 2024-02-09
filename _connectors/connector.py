@@ -12,9 +12,6 @@ def viewControl(
     area_mesa,
     es_recibo,
 ):
-    printers = c.ConectorV3.obtenerImpresoras()
-    print(printers)
-
     printerName = "POS-57"
     serial = ""
 
