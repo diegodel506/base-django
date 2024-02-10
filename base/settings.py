@@ -37,6 +37,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "localhost:3000",
     "localhost:8000",
+    "base-django.onrender.com",
     "https://base-django.onrender.com",
 ]
 
