@@ -69,7 +69,7 @@ MIDDLEWARE = [
     "django.contrib.sessions.middleware.SessionMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
-    # "django.middleware.csrf.CsrfViewMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
@@ -176,16 +176,23 @@ CORS_ALLOW_HEADERS = [
     "dnt",
     "origin",
     "user-agent",
+    "x-csrftoken",
     "x-requested-with",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://base-django.onrender.com",
+    "http://localhost:3000",  # También puede ser necesario si estás desarrollando localmente.
+    "http://localhost:8000",  # También puede ser necesario si estás desarrollando localmente.
 ]
 
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(days=30),  # Token de acceso válido por 30 días.
+    "ACCESS_TOKEN_LIFETIME": timedelta(days=80),  # Token de acceso válido por 30 días.
     "SLIDING_TOKEN_REFRESH_LIFETIME": timedelta(
-        days=30
+        days=80
     ),  # Período de token refresh también por 30 días.
     "SLIDING_TOKEN_LIFETIME": timedelta(
-        days=60
+        days=80
     ),  # El token original es válido por 60 días en total.
 }
